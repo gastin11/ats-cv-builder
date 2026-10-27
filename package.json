@@ -1,0 +1,23 @@
+{
+  "name": "ats-cv-builder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ATS CV Builder — local-first CV editor with import/export, OCR fallback and AI writing assistance",
+  "workspaces": [
+    "shared",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w backend",
+    "dev:frontend": "npm run dev -w frontend",
+    "build": "npm run build -w backend",
+    "test": "npm run test -w backend"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "puppeteer-core": "^22.15.0"
+  }
+}

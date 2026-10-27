@@ -1,0 +1,8 @@
+{
+  "name": "shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./cv-schema/cv.schema.ts",
+  "types": "./cv-schema/cv.schema.ts"
+}

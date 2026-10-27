@@ -1,0 +1,69 @@
+# ========================================================
+# Git Ignore Rules for ATS CV Builder
+# Pastikan tidak ada credential/kunci rahasia yang terunggah!
+# ========================================================
+
+# Environment variables & Secrets (DILARANG KERAS DIUNGGAH)
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+*.cert
+*.crt
+id_rsa
+id_ed25519
+
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Build outputs & compiled code
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Logs & debuggers
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test, coverage, and reports
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# Temporary files & video rendering frame dumps
+export-tmp/frames/
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor specific files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.sublime-workspace
+*.sublime-project
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
