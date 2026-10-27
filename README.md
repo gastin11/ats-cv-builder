@@ -16,19 +16,22 @@ Aplikasi ini mengusung prinsip **local-first** dan **zero-persistence**: tanpa a
 
 ## 🔒 Kebijakan Keamanan & Aturan Upload ke GitHub
 
-Sebelum berkontribusi atau mengunggah perubahan ke repositori ini, **WAJIB** membaca dan mematuhi panduan di [SECURITY_GUIDELINES.md](./SECURITY_GUIDELINES.md).
+Repositori ini bersifat **Publik**. Seluruh kontributor dan pengguna wajib mematuhi aturan keamanan berikut:
 
-### Ringkasan Cepat:
-- ❌ **DILARANG KERAS MENGUNGGAH**:
-  - File `.env`, `.env.local`, kredensial, atau file environment lainnya yang memuat kunci asli.
-  - API Key riil (`AI_API_KEY`, `OCR_SPACE_API_KEY`, token ngrok, bearer tokens, SSH keys).
-  - Folder `node_modules/` dan hasil kompilasi `dist/` / `build/`.
-  - Dokumen CV asli pengguna yang memuat data pribadi (PII).
-- ✅ **YANG DIPERBOLEHKAN**:
-  - Source code aplikasi (`frontend/src`, `backend/src`, `shared/`).
-  - Template konfigurasi dummy: `backend/.env.example` (hanya placeholder tanpa kredensial nyata).
-  - File dokumentasi dan konfigurasi resmi (`package.json`, `tsconfig.json`, `vite.config.ts`).
-  - Dummy data mock untuk pengujian.
+### ❌ Dilarang Keras Diunggah:
+- **File Environment & Kredensial:** `.env`, `backend/.env`, `.env.local`, `.env.production`, atau file kredensial cloud.
+- **Kunci Rahasia & API Key:** OpenAI / Qwen key (`AI_API_KEY`), OCR.Space key (`OCR_SPACE_API_KEY`), DeepL key, auth token ngrok, GitHub Personal Access Token, private SSH keys, dan sertifikat SSL.
+- **Data Pribadi (PII):** Dokumen CV asli pengguna (format PDF/Word yang memuat nama asli, NIK, alamat, telepon).
+- **Dependensi & Vendor:** Folder `node_modules/`.
+- **Hasil Build & Compile:** Folder `dist/`, `build/`, `out/`, dan file `*.tsbuildinfo`.
+- **Log & Pengujian:** File `*.log`, `playwright-report/`, `test-results/`, dan folder `coverage/`.
+
+### ✅ Yang Diperbolehkan:
+- **Source Code Asli:** Seluruh kode aplikasi di `frontend/src/`, `backend/src/`, dan `shared/`.
+- **Template Konfigurasi Dummy:** `backend/.env.example` (hanya placeholder tanpa kredensial nyata).
+- **Konfigurasi Proyek:** `package.json`, `package-lock.json`, `tsconfig.json`, `vite.config.ts`, `tailwind.config.js`.
+- **Data Pengujian Mock:** Data uji anonim (seperti data fiktif Budi Santoso / Alex Morgan).
+- **Dokumentasi & Lisensi:** `README.md` dan `LICENSE`.
 
 ---
 
@@ -73,7 +76,6 @@ ats-cv-builder/
 │   │   └── lib/              # HTTP client ke backend
 │   └── package.json
 ├── .gitignore                # Aturan penyaringan file sensitif & build artifacts
-├── SECURITY_GUIDELINES.md   # Pedoman batasan keamanan upload repositori
 ├── package.json              # Root package (npm workspaces)
 └── README.md                 # Dokumentasi proyek
 ```
@@ -108,7 +110,7 @@ Buka `backend/.env` lalu lengkapi kunci yang diperlukan:
 
 ### 4. Menjalankan di Mode Pengembangan (Development)
 
-Buka dua terminal terpisah (atau jalankan skrip bantuan):
+Buka dua terminal terpisah:
 
 **Terminal 1 — Backend:**
 ```bash
@@ -132,11 +134,7 @@ Aplikasi telah disiapkan agar mudah diakses dari perangkat mobile atau perangkat
 
 1. Konfigurasi tunnel di `ngrok` (port 5173).
 2. Tambahkan domain tunnel ke daftar `CORS_ORIGINS` di `backend/.env`.
-3. Jalankan melalui skrip praktis:
-   ```cmd
-   buka-online.cmd
-   ```
-   atau jalankan manual:
+3. Jalankan service:
    ```bash
    npm run dev -w backend
    npm run build -w frontend && npm run preview -w frontend -- --port 5173

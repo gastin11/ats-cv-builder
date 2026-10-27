@@ -45,6 +45,12 @@ export-tmp/frames/
 *.tmp
 *.temp
 
+# Local runner scripts, intro media & local guideline (not tracked in remote repo)
+buka.cmd
+buka-online.cmd
+ats-cv-builder-intro.mp4
+SECURITY_GUIDELINES.md
+
 # OS files
 .DS_Store
 .DS_Store?
