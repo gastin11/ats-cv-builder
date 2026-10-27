@@ -128,23 +128,6 @@ Buka browser Anda di `http://localhost:5173`.
 
 ---
 
-## 🌐 Menjalankan Akses Jarak Jauh (Ngrok / Tunnel)
-
-Aplikasi telah disiapkan agar mudah diakses dari perangkat mobile atau perangkat lain di luar jaringan lokal:
-
-1. Konfigurasi tunnel di `ngrok` (port 5173).
-2. Tambahkan domain tunnel ke daftar `CORS_ORIGINS` di `backend/.env`.
-3. Jalankan service:
-   ```bash
-   npm run dev -w backend
-   npm run build -w frontend && npm run preview -w frontend -- --port 5173
-   ngrok start cvapp
-   ```
-
-*Catatan Keamanan:* Tutup tunnel jika sesi pengujian selesai agar kuota API backend tidak terbuka untuk publik tanpa pengawasan.
-
----
-
 ## 🛠️ Konfigurasi Environment (`backend/.env`)
 
 | Variabel | Default | Keterangan |
