@@ -19,18 +19,22 @@ Aplikasi ini mengusung prinsip **local-first** dan **zero-persistence**: tanpa a
 Lihat bagaimana **ATS CV Builder** membantu menyusun CV profesional yang siap lolos seleksi parser ATS dengan pratinjau kertas A4 *real-time*:
 
 <p align="center">
-  <a href="https://github.com/gastin11/ats-cv-builder/blob/main/docs/media/ats-cv-builder-promo.mp4">
-    <img src="docs/media/ats-cv-builder-promo.gif" alt="Demo Video Promo ATS CV Builder" width="820" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.12);" />
+  <a href="https://github.com/gastin11/ats-cv-builder/blob/main/docs/media/ats-cv-builder-promo.mp4" title="Klik untuk memutar di Media Player GitHub">
+    <img src="docs/media/ats-cv-builder-promo-player-preview.png" alt="Putar Video Promo ATS CV Builder di Media Player" width="860" style="border-radius: 12px; box-shadow: 0 10px 32px rgba(0,0,0,0.15);" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/gastin11/ats-cv-builder/blob/main/docs/media/ats-cv-builder-promo.mp4">
-    ▶️ <b>Tonton Video Promo Lengkap (25 Detik • 1080p • Voice Over Bahasa Indonesia)</b>
+    ▶️ <b>Putar di Media Player GitHub (25 Detik • 1080p • Voice Over Suara)</b>
+  </a>
+  &nbsp;•&nbsp;
+  <a href="docs/media/ats-cv-builder-promo.gif">
+    🎞️ <b>Lihat Animasi Demo GIF</b>
   </a>
   &nbsp;•&nbsp;
   <a href="docs/media/ats-cv-builder-promo.mp4">
-    📥 <b>Unduh File MP4 Langsung</b>
+    📥 <b>Unduh File MP4</b>
   </a>
 </p>
 
