@@ -14,6 +14,30 @@ Aplikasi ini mengusung prinsip **local-first** dan **zero-persistence**: tanpa a
 
 ---
 
+## 🎬 Video Demo & Promo
+
+Lihat bagaimana **ATS CV Builder** membantu menyusun CV profesional yang siap lolos seleksi parser ATS dengan pratinjau kertas A4 *real-time*:
+
+<p align="center">
+  <a href="https://github.com/gastin11/ats-cv-builder/blob/main/docs/media/ats-cv-builder-promo.mp4">
+    <img src="docs/media/ats-cv-builder-promo.gif" alt="Demo Video Promo ATS CV Builder" width="820" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.12);" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/gastin11/ats-cv-builder/blob/main/docs/media/ats-cv-builder-promo.mp4">
+    ▶️ <b>Tonton Video Promo Lengkap (25 Detik • 1080p • Voice Over Bahasa Indonesia)</b>
+  </a>
+  &nbsp;•&nbsp;
+  <a href="docs/media/ats-cv-builder-promo.mp4">
+    📥 <b>Unduh File MP4 Langsung</b>
+  </a>
+</p>
+
+> 💡 *Video promo di atas dibuat menggunakan framework [Remotion](https://www.remotion.dev/) dan motion graphic sinematik ([Bang Motion](promo-video/)) lengkap dengan voice over neural Bahasa Indonesia.*
+
+---
+
 ## 🔒 Kebijakan Keamanan & Aturan Upload ke GitHub
 
 Repositori ini bersifat **Publik**. Seluruh kontributor dan pengguna wajib mematuhi aturan keamanan berikut:
@@ -58,6 +82,12 @@ Repositori ini bersifat **Publik**. Seluruh kontributor dan pengguna wajib memat
 
 ```text
 ats-cv-builder/
+├── docs/                     # Media & aset dokumentasi
+│   └── media/                # Video promo (MP4 1080p), preview animasi GIF & poster
+├── promo-video/              # Proyek video promo berbasis Remotion (4.0) & Bang Motion
+│   ├── src/                  # Komposisi 25s, scene 1–7, kamera rig, blur transition
+│   ├── generate-voiceover.py # Script TTS otomatis Neural Voice Over Bahasa Indonesia
+│   └── public/voiceover/     # Aset audio voiceover per scene
 ├── shared/                   # Skema kanonik bersama (Zod) & i18n
 │   └── cv-schema/            # Validasi tipe CV untuk frontend & backend
 ├── backend/                  # REST API stateless (Node.js + Fastify + TypeScript)
