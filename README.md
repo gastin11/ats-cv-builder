@@ -14,55 +14,6 @@ Aplikasi ini mengusung prinsip **local-first** dan **zero-persistence**: tanpa a
 
 ---
 
-## 🎬 Video Demo & Promo
-
-Lihat bagaimana **ATS CV Builder** membantu menyusun CV profesional yang siap lolos seleksi parser ATS dengan pratinjau kertas A4 *real-time*:
-
-<p align="center">
-  <a href="https://github.com/gastin11/ats-cv-builder/blob/main/docs/media/ats-cv-builder-promo.mp4" title="Klik untuk memutar di Media Player GitHub">
-    <img src="docs/media/ats-cv-builder-promo-player-preview.png" alt="Putar Video Promo ATS CV Builder di Media Player" width="860" style="border-radius: 12px; box-shadow: 0 10px 32px rgba(0,0,0,0.15);" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/gastin11/ats-cv-builder/blob/main/docs/media/ats-cv-builder-promo.mp4">
-    ▶️ <b>Putar di Media Player GitHub (25 Detik • 1080p • Voice Over Suara)</b>
-  </a>
-  &nbsp;•&nbsp;
-  <a href="docs/media/ats-cv-builder-promo.gif">
-    🎞️ <b>Lihat Animasi Demo GIF</b>
-  </a>
-  &nbsp;•&nbsp;
-  <a href="docs/media/ats-cv-builder-promo.mp4">
-    📥 <b>Unduh File MP4</b>
-  </a>
-</p>
-
-> 💡 *Video promo di atas dibuat menggunakan framework [Remotion](https://www.remotion.dev/) dan motion graphic sinematik ([Bang Motion](promo-video/)) lengkap dengan voice over neural Bahasa Indonesia.*
-
----
-
-## 🔒 Kebijakan Keamanan & Aturan Upload ke GitHub
-
-Repositori ini bersifat **Publik**. Seluruh kontributor dan pengguna wajib mematuhi aturan keamanan berikut:
-
-### ❌ Dilarang Keras Diunggah:
-- **File Environment & Kredensial:** `.env`, `backend/.env`, `.env.local`, `.env.production`, atau file kredensial cloud.
-- **Kunci Rahasia & API Key:** OpenAI / Qwen key (`AI_API_KEY`), OCR.Space key (`OCR_SPACE_API_KEY`), DeepL key, auth token ngrok, GitHub Personal Access Token, private SSH keys, dan sertifikat SSL.
-- **Data Pribadi (PII):** Dokumen CV asli pengguna (format PDF/Word yang memuat nama asli, NIK, alamat, telepon).
-- **Dependensi & Vendor:** Folder `node_modules/`.
-- **Hasil Build & Compile:** Folder `dist/`, `build/`, `out/`, dan file `*.tsbuildinfo`.
-- **Log & Pengujian:** File `*.log`, `playwright-report/`, `test-results/`, dan folder `coverage/`.
-
-### ✅ Yang Diperbolehkan:
-- **Source Code Asli:** Seluruh kode aplikasi di `frontend/src/`, `backend/src/`, dan `shared/`.
-- **Template Konfigurasi Dummy:** `backend/.env.example` (hanya placeholder tanpa kredensial nyata).
-- **Konfigurasi Proyek:** `package.json`, `package-lock.json`, `tsconfig.json`, `vite.config.ts`, `tailwind.config.js`.
-- **Data Pengujian Mock:** Data uji anonim (seperti data fiktif Budi Santoso / Alex Morgan).
-- **Dokumentasi & Lisensi:** `README.md` dan `LICENSE`.
-
----
-
 ## 🌟 Fitur Utama
 
 - 🎯 **ATS-Compliant Design**: Format struktur CV kanonik yang terbaca optimal oleh parser ATS (urutan section standar, hirarki heading jelas, tanpa tabel bertingkat yang membingungkan parser).
@@ -86,12 +37,6 @@ Repositori ini bersifat **Publik**. Seluruh kontributor dan pengguna wajib memat
 
 ```text
 ats-cv-builder/
-├── docs/                     # Media & aset dokumentasi
-│   └── media/                # Video promo (MP4 1080p), preview animasi GIF & poster
-├── promo-video/              # Proyek video promo berbasis Remotion (4.0) & Bang Motion
-│   ├── src/                  # Komposisi 25s, scene 1–7, kamera rig, blur transition
-│   ├── generate-voiceover.py # Script TTS otomatis Neural Voice Over Bahasa Indonesia
-│   └── public/voiceover/     # Aset audio voiceover per scene
 ├── shared/                   # Skema kanonik bersama (Zod) & i18n
 │   └── cv-schema/            # Validasi tipe CV untuk frontend & backend
 ├── backend/                  # REST API stateless (Node.js + Fastify + TypeScript)
