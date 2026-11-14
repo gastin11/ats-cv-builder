@@ -14,6 +14,16 @@ Aplikasi ini mengusung prinsip **local-first** dan **zero-persistence**: tanpa a
 
 ---
 
+## 🖥️ Preview Aplikasi
+
+### Menu Utama
+![Menu Utama ATS CV Builder](assets/preview-menu-utama.png)
+
+### Editor & Live Preview A4
+![Editor dan Live Preview ATS CV Builder](assets/preview-editor.png)
+
+---
+
 ## 🌟 Fitur Utama
 
 - 🎯 **ATS-Compliant Design**: Format struktur CV kanonik yang terbaca optimal oleh parser ATS (urutan section standar, hirarki heading jelas, tanpa tabel bertingkat yang membingungkan parser).
@@ -37,6 +47,7 @@ Aplikasi ini mengusung prinsip **local-first** dan **zero-persistence**: tanpa a
 
 ```text
 ats-cv-builder/
+├── assets/                   # Gambar preview aplikasi untuk dokumentasi README
 ├── shared/                   # Skema kanonik bersama (Zod) & i18n
 │   └── cv-schema/            # Validasi tipe CV untuk frontend & backend
 ├── backend/                  # REST API stateless (Node.js + Fastify + TypeScript)
